@@ -15,6 +15,8 @@ public class FrontServlet extends HttpServlet {
         response.setContentType("text/plain");
         PrintWriter out = response.getWriter();
         out.println("URL demandée: " + request.getRequestURL().toString());
+        out.println("de Dimby" + request.getRequestURL().toString());
+
         System.out.println("URL demandée: " + request.getRequestURL().toString());
     }
 
