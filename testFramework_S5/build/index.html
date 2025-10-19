@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test MVC Framework</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; text-align: center; }
+        .test-links { margin: 20px 0; }
+        .test-links a { display: block; margin: 10px 0; color: #007bff; text-decoration: none; }
+        .test-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test du Framework MVC</h1>
+        <p>Cette application teste notre Framework MVC maison avec Front Controller.</p>
+        
+        <div class="test-links">
+            <h3>Testez ces URLs :</h3>
+            <a href="/TestFramework/">Accueil (/)</a>
+            <a href="/TestFramework/hello">Route dynamique (/hello)</a>
+            <a href="/TestFramework/form">Route dynamique (/form)</a>
+            <a href="/TestFramework/pages/test.html">Fichier statique</a>
+            <a href="/TestFramework/pages/formulaire.html">Fichier statique</a>
+            <a href="/TestFramework/any/other/url">N'importe quelle URL</a>
+        </div>
+        
+        <p><strong>Chaque URL devrait être capturée par le FrontServlet !</strong></p>
+    </div>
+</body>
+</html>
